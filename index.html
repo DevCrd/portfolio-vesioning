@@ -8,9 +8,10 @@
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="container">
       <h1 class="logo">MyPortfolio</h1>
-      <ul>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <ul class="nav-links" id="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
@@ -18,14 +19,14 @@
   </header>
 
   <section class="hero">
-    <div class="hero-text">
+    <div class="container hero-content">
       <h2>Hello, I'm <span>DevCrd</span></h2>
-      <p>A Frontend Developer passionate about creating interactive web experiences.</p>
+      <p>A Frontend Developer passionate about creating interactive and responsive web experiences.</p>
       <a href="about.html" class="btn">Learn More</a>
     </div>
   </section>
 
-  <section class="projects">
+  <section class="projects container">
     <h2>Recent Projects</h2>
     <div class="project-grid">
       <div class="project-card">
@@ -46,5 +47,11 @@
   <footer>
     <p>© 2025 DevCrd </p>
   </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => nav.classList.toggle('show'));
+  </script>
 </body>
 </html>

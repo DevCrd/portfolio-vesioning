@@ -8,16 +8,17 @@
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="container">
       <h1 class="logo">MyPortfolio</h1>
-      <ul>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html" class="active">About</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="about">
+  <section class="about container">
     <h2>About Me</h2>
     <p>
       Hello! I'm <strong>DevCrd</strong>, a web developer based in Nigeria.  
@@ -31,5 +32,11 @@
   <footer>
     <p>© 2025 DevCrd | Let's build something amazing!</p>
   </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => nav.classList.toggle('show'));
+  </script>
 </body>
 </html>
