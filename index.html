@@ -1,57 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniude Chidera Godswill Eric | C.A.G.E</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <header>
-    <nav class="container">
-      <h1 class="logo">MyPortfolio</h1>
-      <div class="menu-toggle" id="menu-toggle">☰</div>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">C.A.G.E</div>
+                <div class="menu-toggle" id="menu-toggle">☰</div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <section class="hero">
-    <div class="container hero-content">
-      <h2>Hello, I'm <span>DevCrd</span></h2>
-      <p>A Frontend Developer passionate about creating interactive and responsive web experiences.</p>
-      <a href="about.html" class="btn">Learn More</a>
-    </div>
-  </section>
+    <section class="hero">
+        <div class="container hero-content">
+            <span class="company-name">C.A.G.E</span>
+            <h2>Hello, I'm <br><span>Aniude Chidera Godswill Eric</span></h2>
+            <p>Crafting digital experiences that merge functionality with premium aesthetics. Building scalable web applications for the modern world.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
 
-  <section class="projects container">
-    <h2>Recent Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Project One</h3>
-        <p>A brief description of your project.</p>
-      </div>
-      <div class="project-card">
-        <h3>Project Two</h3>
-        <p>Another short description.</p>
-      </div>
-      <div class="project-card">
-        <h3>Project Three</h3>
-        <p>Something cool you’ve built.</p>
-      </div>
-    </div>
-  </section>
+    <section class="projects container" id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="project-grid">
+            <!-- Web Utility Hub -->
+            <div class="project-card">
+                <div>
+                    <h3>Web Utility Hub</h3>
+                    <p>A comprehensive suite of daily productivity tools including a BMI calculator, Unit Converter, and Password Generator. Features a clean UI with light/dark mode support.</p>
+                </div>
+                <a href="../web-utility-hub/index.html" class="project-link">View Project</a>
+            </div>
 
-  <footer>
-    <p>© 2025 DevCrd </p>
-  </footer>
+            <!-- Hotels.ng Clone -->
+            <div class="project-card">
+                <div>
+                    <h3>Hotels.ng Clone</h3>
+                    <p>A pixel-perfect clone of the Hotels.ng booking platform. Demonstrates complex layout structures, search functionality implementation, and responsive design mastery.</p>
+                </div>
+                <a href="../../hotels-ng/index.html" class="project-link">View Project</a>
+            </div>
 
-  <script>
-    const toggle = document.getElementById('menu-toggle');
-    const nav = document.getElementById('nav-links');
-    toggle.addEventListener('click', () => nav.classList.toggle('show'));
-  </script>
+           
+
+            <!-- Uneven Music Player -->
+            <div class="project-card">
+                <div>
+                    <h3>Uneven Music Player</h3>
+                    <p>A custom-built music player interface featuring playback controls, progress tracking, and a unique visual design. Showcases DOM manipulation and media API usage.</p>
+                </div>
+                <a href="../musicplayer/index.html" class="project-link">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Vercura Systems | Aniude Chidera Godswill Eric. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav-links');
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>

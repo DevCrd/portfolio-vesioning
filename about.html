@@ -1,42 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Me</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Aniude Chidera Godswill Eric</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body>
   <header>
-    <nav class="container">
-      <h1 class="logo">MyPortfolio</h1>
-      <div class="menu-toggle" id="menu-toggle">☰</div>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav>
+        <div class="logo">Vercura<span>Systems</span></div>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section class="about container">
-    <h2>About Me</h2>
-    <p>
-      Hello! I'm <strong>DevCrd</strong>, a web developer based in Nigeria.  
-      I love crafting beautiful, responsive websites and bringing creative ideas to life through code.
-    </p>
-    <p>
-      My interests include UI/UX design, frontend development, and building scalable web apps using modern tools.
-    </p>
+  <section class="hero" style="min-height: 40vh;">
+    <div class="container hero-content">
+      <h2>About <span>Me</span></h2>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="container">
+      <div class="about-content">
+        <h2>Behind Vercura Systems</h2>
+        <p>
+          Hello! I'm <strong>Aniude Chidera Godswill Eric</strong>, a passionate Web Developer based in Nigeria and the
+          creative mind behind <strong>Vercura Systems</strong>.
+        </p>
+        <p>
+          I specialize in building accessible, pixel-perfect, and performant web experiences. My journey in tech is
+          driven by a desire to solve real-world problems through elegant code and intuitive design.
+        </p>
+        <p>
+          Whether I'm crafting a complex dashboard for school management or a simple utility tool, my focus remains on
+          quality, user experience, and scalability.
+        </p>
+
+        <h3 style="color: var(--heading-color); margin-top: 2rem; margin-bottom: 1rem;">Technical Skills</h3>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <span class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; cursor: default;">HTML5</span>
+          <span class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; cursor: default;">CSS3</span>
+          <span class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; cursor: default;">JavaScript</span>
+          <span class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; cursor: default;">Responsive Design</span>
+          <span class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; cursor: default;">UI/UX</span>
+        </div>
+      </div>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 DevCrd | Let's build something amazing!</p>
+    <div class="container">
+      <p>&copy; 2026 Vercura Systems | Aniude Chidera Godswill Eric. All rights reserved.</p>
+    </div>
   </footer>
 
   <script>
     const toggle = document.getElementById('menu-toggle');
     const nav = document.getElementById('nav-links');
-    toggle.addEventListener('click', () => nav.classList.toggle('show'));
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
   </script>
 </body>
+
 </html>
